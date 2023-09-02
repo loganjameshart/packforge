@@ -1,5 +1,7 @@
 # Packforge
 
+![Packforge logo](https://github.com/loganjameshart/packforge/blob/main/packforge.png)
+
 A Python interface for Linux package management.
 
 ## Supported Distros / Package Managers
