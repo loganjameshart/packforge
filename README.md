@@ -9,14 +9,22 @@ A Python interface for Linux package management.
 - CentOS (yum)
 - Arch (pacman)
 
+## Installation
+
+```bash
+pip install packforge
+```
+
 ## Configuration
 
 Configuration is within the ```config.ini``` file in the working directory. If one is not found, default settings will be used.
 
 ## Current configuration settings
 
-- noconfirm (no "Y/n" prompting)
-- print output to stdout
+- noconfirm
+	- whether or not you are asked Yes/No before changes are made
+- printing
+	- whether or not package manager messages are printed to stdout
 
 ## Usage
 
