@@ -9,12 +9,6 @@ A Python interface for Linux package management.
 - CentOS (yum)
 - Arch (pacman)
 
-## Installation
-
-```bash
-pip install packforge
-```
-
 ## Configuration
 
 Configuration is within the ```config.ini``` file in the working directory. If one is not found, default settings will be used.
@@ -42,4 +36,5 @@ forge.installed_packages
 forge.install_package('geany', 'ufw', 'python3-tk')
 ```
 
-###
+## Contributing
+Pull requests are more than welcome, especially from folks interested in expanding this to more distros. Please open an issue to discuss larger changes.
