@@ -1,5 +1,7 @@
 # Packforge
 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 ![Packforge logo](https://raw.githubusercontent.com/loganjameshart/packforge/main/packforge%20(250%20%C3%97%20250%20px).svg)
 
 A Python interface for Linux package management.
