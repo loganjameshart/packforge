@@ -83,6 +83,7 @@ class Forge:
             text=True,
         )
         package_list = process.stdout.split("\n")
+        del package_list[0] # removes "Listing..." message
         return package_list
 
     def update_packages(self) -> None:
