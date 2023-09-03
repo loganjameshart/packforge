@@ -44,3 +44,21 @@ forge.install_package('geany', 'ufw', 'python3-tk')
 
 ## Contributing
 Pull requests are more than welcome, especially from folks interested in expanding this to more distros. Please open an issue to discuss larger changes.
+
+# Roadmap
+
+## Import Future Additions
+- Unit tests with ```pytest```
+- Proper Python package management with ```poetry```
+
+## Future Support
+
+- Support for more Linux distributions
+- Support for pinning package releases
+- More robust interactions with package managers:
+	- Adding and updating package sources
+	- Provide search interface to repositiories
+
+### Timeline
+
+- September 2, 2023: ***RELEASE***
