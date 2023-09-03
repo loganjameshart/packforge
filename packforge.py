@@ -90,7 +90,7 @@ class Forge:
         """Checks for updates for installed packages."""
 
         try:
-            if self.package_manager == "apt" or "yum":
+            if self.package_manager in ("apt", "yum"):
                 self._run_subprocess([self.package_manager, "update"])
                 self.installed_packages = self.list_installed_packages()
             elif self.package_manager == "dnf":
@@ -106,7 +106,7 @@ class Forge:
         """Upgrades installed packages."""
 
         try:
-            if self.package_manager == "apt" or "yum" or "dnf":
+            if self.package_manager in ("apt", "yum", "dnf"):
                 self._run_subprocess([self.package_manger, "upgrade", "-y"])
                 self.installed_packages = self.list_installed_packages()
             elif self.package_manger == "pacman":
@@ -119,7 +119,7 @@ class Forge:
         """Installs one or multiple packages."""
 
         try:
-            if self.package_manager == "apt" or "yum" or "dnf":
+            if self.package_manager in ("apt", "yum", "dnf"):
                 for package in desired_packages:
                     if self.settings["noconfirm"]:
                         self._run_subprocess(
@@ -142,7 +142,7 @@ class Forge:
 
     def remove_package(self, *unwanted_packages: str) -> None:
         try:
-            if self.package_manger == "apt" or "yum" or "dnf":
+            if self.package_manger in ("apt", "yum", "dnf"):
                 for package in unwanted_packages:
                     if self.settings["noconfirm"]:
                         self._run_subprocess(
